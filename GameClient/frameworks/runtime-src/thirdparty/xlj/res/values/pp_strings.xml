@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- login -->
+    <string name="pp_login_intput_mobile">请输入手机号</string>
+    <string name="pp_login_loginpwd">请输入密码(6~16位)</string>
+    <string name="pp_login_input_verificationcode">请输入手机验证码</string>
+    <string name="pp_login_get_verificationcode">获取验证码</string>
+    <string name="pp_login_intput_mobileorUsername">手机号/用户名</string>
+    <string name="pp_login_btn_phonelogin_olduser">已有帐号登录</string>
+    <string name="pp_login_btn_phonelogin_onekey_register">一键游戏</string>
+    <string name="pp_login_onekey_account_set">修改用户名</string>
+    <string name="pp_login_onekey_pwd_set">修改密码</string>
+    <string name="pp_login_forgetpwd">忘记密码?</string>
+    <string name="pp_login_usergareement">注册即表示同意《用户协议》</string>
+    <string name="pp_login_mobilephone">手机号注册</string>
+    <string name="pp_login_other_type">其他方式登录:</string>
+    <string name="pp_login_user_aggrement_accept">登录表示您同意《小辣椒用户服务协议》</string>
+    <string name="pp_login_intput_onekey_pwd">请输入密码</string>
+    <string name="pp_login_input_pwd">只需一步，即可完成一键注册！</string>
+    <string name="pp_login_entergame">进入游戏</string>
+    <string name="pp_login_remove_user_cancel">取消</string>
+    <string name="pp_login_remove_user_ok">确定</string>
+    <string name="pp_login_find_msg">完成</string>
+    <string name="pp_login__newuser_register">新用户注册</string>
+    <string name="pp_login_btn_reBack2login">返回登录</string>
+    <string name="pp_login_findpwd_oldpwd_text">旧密码</string>
+    <string name="pp_login_findpwd_pwd_input_hint_tips">6~16位字母或数字</string>
+    <string name="pp_login_findpwd_newpwd_input">请输入6~16位字母或数字新密码</string>
+    <string name="pp_login_findpwd_newpwd_text">新密码</string>
+    <string name="pp_login_findpwd_newpwd_makesrue_text">确认密码</string>
+    <string name="pp_login_findpwd_newpwd_makesrue_input">确认新密码</string>
+    <string name="pp_login_user_agreement_finish">同意</string>
+    
+    <!-- floatview -->
+    <string name="pp_float_menu_gamecenter">大厅</string>
+    <string name="pp_float_menu_account">帐号</string>
+    <string name="pp_float_menu_notification">消息</string>
+    <string name="pp_float_menu_cleanBall">加速球</string>
+    <string name="pp_float_menu_msg">退出</string>
+    <!-- payment -->
+    <string name="pp_payment_choosepayment_title">充值中心</string>
+    <string name="pp_pay_account_text">帐号</string>
+    <string name="pp_pay_product_name_text">道具名称</string>
+    <string name="pp_pay_item_name">购买商品</string>
+    <string name="pp_pay_discount_name">消费金额</string>
+    <string name="pp_pay_paymoney_name_text">订单金额</string>
+    <string name="pp_payment_center_choose_paytype">选择充值方式</string>
+
+    <!-- account -->
+    <string name="pp_float_account_title">帐号安全</string>
+    <string name="pp_float_account_modifypwd">更改密码</string>
+    <string name="pp_float_account_bindphone">绑定手机</string>
+    <string name="pp_float_account_unbindphone">未绑定</string>
+    <string name="pp_float_account_qq_group">客服QQ群</string>
+    <string name="pp_float_account_service_phone">客服热线</string>
+    <string name="pp_float_phone_find_pwd_msg_tips">短信有可能有延时，请耐心等待，如果长时间未收到短信，请60秒后重新获取</string>
+    <string name="pp_float_setusername_tips">提示:该帐号仅能修改一次！帐号必须为6~16位数字和字母组合(不能是纯数字)</string>
+    <string name="pp_float_setusername_account_input">请输入新帐号</string>
+
+</resources>

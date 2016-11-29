@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>微信安全支付</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script src="/assets/javascripts/jquery-2.1.0.min.js"></script>
+<style type="text/css">
+body{padding: 0;margin:0;background-color:#eeeeee;font-family: '黑体';}
+.pay-main{padding-top: 20px;padding-left: 20px;padding-bottom: 20px;}
+.pay-main img{margin: 0 auto;display: block;width:180px;height:180px;margin-bottom:15px;}
+.pay-main .lines{text-align: center;font-size:14pt;margin-top: 10px;margin-left: -12px;}
+.tips .img{margin: 20px;}
+.tips .img img{width:20px;}
+.tips span{vertical-align: top;color:#ababab;line-height:18px;padding-left: 10px;padding-top:0px;}
+.action{background:#4cb131;padding: 10px 0;color:#ffffff;text-align: center;font-size:14pt;border-radius: 10px 10px; margin: 15px;}
+.action:focus{background:#4cb131;}
+.action.disabled{background-color:#aeaeae;}
+.footer{position: absolute;bottom:0;left:0;right:0;text-align: center;padding-bottom: 20px;font-size:10pt;color:#aeaeae;}
+.footer .ct-if{margin-top:6px;font-size:8pt;}
+.conainer{margin:0:auto;padding: 20px;line-height: 32px;}
+.total-fee{line-height: 32px;
+    border-radius: 3px;
+    border: 1px solid #ddd;}
+</style>
+</head>
+<body>
+<div class="conainer">
+	<div>金额:<input class="total-fee" type="number" maxlength="2" value="1"/>(分)</div>
+	<div id="action" class="action">确认支付</div>
+</div>
+<script type="text/javascript">
+	$('.action').click(function(){
+		var totalFee = $('.total-fee').val();
+		if(totalFee <=0){
+			alert('请输入正确的金额信息');
+			return;
+		}
+		$.post('/pay/exper/test',{totalFee:totalFee},function(rest){
+			rest = JSON.parse(rest);
+			location.href=rest.prepay_url;
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:paddingRight="3dip">
+        <EditText
+            android:id="@+id/et_login_account_drop_down" 
+            style="@style/et_base_style"
+            android:layout_toLeftOf="@+id/btn_login_account_drop_down"
+            android:layout_centerVertical="true"
+            android:textColor="@color/pp_color_black_ff"
+           />
+        <Button
+            android:id="@+id/btn_login_account_drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pp_login_account_drop_arrow"
+            />
+       
+</RelativeLayout>

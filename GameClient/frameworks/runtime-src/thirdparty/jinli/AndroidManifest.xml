@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gameofflinedemo"
+    android:versionCode="30107001"
+    android:versionName="3.1.8.d" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <!-- 开始添加Amigo Play SDK 需要的权限,开发者重点关注 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 结束Amigo Play SDK 添加权限 -->
+
+    <application
+        android:name="com.gionee.game.offline.demo.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.gionee.game.offline.demo.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gionee.game.offline.demo.PayTestActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+
+        <!--开始添加Amigo Play SDK 需要的服务,开发者重点关注-->
+        <service android:name="com.gionee.game.offlinesdk.floatwindows.FloatWindowService">
+        </service>
+        <activity
+            android:name="com.gionee.gsp.service.activity.AssistActivity"
+            android:configChanges="mcc|mnc|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <!--结束Amigo Play SDK 需要的服务,开发者重点关注-->
+    </application>
+
+</manifest>

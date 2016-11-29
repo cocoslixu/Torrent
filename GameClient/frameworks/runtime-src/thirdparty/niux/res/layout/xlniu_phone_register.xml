@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/default_bg"
+              android:orientation="vertical" >
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp" >
+
+        <TextView
+                android:id="@+id/xlniu_phoneregister_tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:textColor="#20222a"
+                android:textSize="16sp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dip"
+                android:background="@drawable/settings_group_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/EntryBorderWidth" >
+
+            <FrameLayout
+                    android:id="@+id/xlniu_phoneregister_fl_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/settings_item_top_radius_bg" >
+
+                <EditText
+                        android:id="@+id/xlniu_phoneregister_et_phone"
+                        android:phoneNumber="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/login_user_hover"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/user_phone_edit_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textUri"
+                        android:nextFocusDown="@+id/edit_text_user_pwd"
+                        android:singleLine="true"
+                        android:textColor="#ff333333"
+                        android:textColorHint="#ff94969f"
+                        android:textSize="@dimen/bt_cm_textsize_13" >
+                </EditText>
+
+                <Button
+                        android:id="@+id/xlniu_phoneregister_btn_clearphone"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/edit_text_clear_btn_selector"
+                        android:visibility="invisible" />
+            </FrameLayout>
+
+            <RelativeLayout
+                    android:id="@+id/xlniu_phoneregister_fl_smsverifycode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/EntryBorderWidth"
+                    android:background="@drawable/settings_item_bottom_radius_bg"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/xlniu_phoneregister_et_smsverifycode"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/login_password"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/login_smsverifycode_hint_text"
+                        android:inputType="text"
+                        android:nextFocusDown="@+id/layout_login"
+                        android:singleLine="true"
+                        android:textColor="#ff333333"
+                        android:textColorHint="#ff94969f"
+                        android:textSize="@dimen/bt_cm_textsize_13"
+                        android:layout_alignParentStart="false"/>
+
+                <Button android:id="@+id/xlniu_phoneregister_btn_getsmsverifycode"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_dlg_ok_btn_selector"
+                        android:layout_alignBottom="@id/xlniu_phoneregister_et_smsverifycode"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/register_sms_verifycode"
+
+                        />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/xlniu_phoneregister_ll_verifycode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/EntryBorderWidth"
+                    android:background="@drawable/settings_item_bottom_radius_bg"
+                    android:visibility="gone">
+
+                <EditText
+                        android:id="@+id/xlniu_phoneregister_et_verifycode"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:drawableLeft="@drawable/login_password"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/xlniu_register_verifycodehit"
+                        android:imeOptions="actionNext"
+                        android:inputType="textUri"
+                        android:nextFocusDown="@+id/edit_text_user_pwd"
+                        android:singleLine="true"
+                        android:textColor="#ff333333"
+                        android:textColorHint="#ff94969f"
+                        android:textSize="@dimen/bt_cm_textsize_13"/>
+                <ImageView
+                        android:id="@+id/xlniu_phoneregister_iv_verifycode"
+                        android:layout_width="80dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/ic_launcher"
+                        android:contentDescription="@string/xlniu_register_verifycodepic"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:id="@+id/xlniu_phoneregister_ll_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/oneclick_regist_btn_selector"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/login_phone_regist"
+                        android:textColor="#ffffffff"
+                        android:textColorHint="#b2ffffff"
+                        android:textSize="@dimen/bt_cm_textsize_17" />
+
+                <com.xunlei.niux.mobilegame.sdk.common.ui.AnimationDot
+                        android:id="@+id/animation_dot_regist"
+                        android:layout_width="20dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:clickable="false"
+                        android:gravity="left|bottom"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/bt_cm_textsize_17"
+                        android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/layout_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/login_dlg_ok_btn_selector"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                <TextView
+                        android:id="@+id/text_view_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:text="@string/login_ok_button"
+                        android:textColor="#ffffffff"
+                        android:textColorHint="#b2ffffff"
+                        android:textSize="@dimen/bt_cm_textsize_17" />
+
+                <com.xunlei.niux.mobilegame.sdk.common.ui.AnimationDot
+                        android:id="@+id/animation_dot_login"
+                        android:layout_width="20dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dip"
+                        android:clickable="false"
+                        android:gravity="left|bottom"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/bt_cm_textsize_17"
+                        android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_view_username_register"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:gravity="center|center_vertical|bottom"-->
+        <!--android:text="@string/username_register_buttom_hint_text"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="@dimen/bt_cm_textsize_13"-->
+        <!--android:visibility="gone"-->
+        <!--android:textAppearance="@style/login_hint_text" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

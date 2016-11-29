@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/plugin_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/plugin_test" />
+    
+    <Button 
+        android:id="@+id/pay_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/pay_test"/>
+
+
+    <Button
+        android:id="@+id/query_promotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="@string/query_promotion"/>
+</LinearLayout>

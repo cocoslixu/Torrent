@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pp_dialog_frame_height_larger"
+    android:layout_gravity="center"
+    android:background="@drawable/pp_login_et_frame_bg_delete_nouse"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/lin_all_custom_main_title"
+        layout="@layout/pp_all_custom_main_title" />
+
+    <RelativeLayout
+        android:id="@+id/rel_login_user_agreement_btnlayout"
+        style="@style/rel_base_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/pp_sv_frame_padding_bottom" >
+
+        <Button
+            android:id="@+id/btn_login_user_agreement_ok"
+            style="@style/PPStyle_LargerButton"
+            android:text="@string/pp_login_user_agreement_finish" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_login_user_agreement_frame"
+        style="@style/scrollView_base_style"
+        android:layout_height="@dimen/pp_dialog_frame_height"
+        android:layout_above="@id/rel_login_user_agreement_btnlayout"
+        android:layout_below="@id/lin_all_custom_main_title"
+        android:layout_centerInParent="true"
+        android:background="@null" >
+
+        <RelativeLayout
+            android:id="@+id/rel_login_user_agreement_editFrame"
+            style="@style/rel_frame_dialog_bkg" >
+
+            <TextView
+                android:id="@+id/tv_login_user_agreement_content"
+                style="@style/textview_tips_base_style"
+                android:textColor="@color/pp_color_black_ff" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

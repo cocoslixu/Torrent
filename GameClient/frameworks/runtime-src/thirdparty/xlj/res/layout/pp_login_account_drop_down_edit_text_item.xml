@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:padding="@dimen/pp_margin_padding_little10"
+    android:paddingBottom="5dip"
+    android:paddingLeft="3dip"
+    >
+    
+        <TextView 
+            android:id="@+id/btn_login_account_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:textColor="@color/pp_color_textcolor_orange"
+            />
+        
+        <ImageView
+            android:id="@+id/iv_login_delete_btn"
+            android:layout_width="@dimen/pp_popwindow_deletebtn_wh"
+            android:layout_height="@dimen/pp_popwindow_deletebtn_wh"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/pp_login_close_press"
+            />
+</LinearLayout>

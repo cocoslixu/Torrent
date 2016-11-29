@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg" >
+
+    <!-- 头部标题栏布局 -->
+
+    <com.xunlei.niux.mobilegame.sdk.common.ui.SimpleTitleBar
+        android:id="@+id/st_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/st_title"
+        android:layout_marginBottom="19dip"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="19dip" >
+
+        <ImageView
+            android:id="@+id/image_view_avatar"
+            android:layout_width="85dip"
+            android:layout_height="85dip"
+            android:background="@drawable/iconborder"
+            android:contentDescription="@string/common_imageview_contentdescription"
+            android:padding="1dip" />
+
+        <TextView
+            android:id="@+id/text_view_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_view_avatar"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/image_view_avatar"
+            android:text="@string/user_info_nickname"
+            android:textColor="#20222a"
+            android:textSize="16sp" />
+
+
+
+        <!-- 没有这个，先保留 -->
+
+        <ImageView
+            android:id="@+id/iv_top_vip_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_view_nickname"
+            android:layout_below="@id/text_view_nickname"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/common_imageview_contentdescription"
+            android:src="@drawable/upgrade_vip1_dis"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- menu 以后可扩展 -->
+
+   <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_userinfo_top"
+        android:layout_marginLeft="17dip"
+        android:layout_marginRight="17dip"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="@dimen/EntryBorderWidth"
+        android:background="@drawable/login_box_bg" >
+
+
+
+        
+    </RelativeLayout>
+
+    <!-- 底部按钮 -->
+
+    <LinearLayout
+        android:id="@+id/ll_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="17dip"
+        android:paddingRight="17dip" >
+
+        <TextView
+            android:id="@+id/text_view_logout"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="48dip"
+            android:layout_marginTop="11dip"
+            android:background="@drawable/userinfo_exit_btn_selector"
+            android:contentDescription="@string/common_imageview_contentdescription"
+            android:gravity="center"
+            android:text="@string/exit_login"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

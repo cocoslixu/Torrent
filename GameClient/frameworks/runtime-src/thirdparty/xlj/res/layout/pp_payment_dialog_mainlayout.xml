@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView style="@style/scrollView_base_style" >
+
+        <RelativeLayout style="@style/rel_main_layout_style" >
+
+            <include
+                android:id="@+id/lin_all_custom_main_title"
+                layout="@layout/pp_all_custom_main_title" />
+
+            <RelativeLayout
+                android:id="@+id/rel_payment_center_editFrame"
+                style="@style/rel_frame_dialog_bkg"
+                android:layout_below="@id/lin_all_custom_main_title" >
+
+                <TextView
+                    android:id="@+id/tv_payment_center_account_text"
+                    style="@style/tv_left_textview_style"
+                    android:text="@string/pp_pay_account_text" />
+
+                <View
+                    android:id="@+id/view_vertical_divider_payment_center_account"
+                    style="@style/view_divider_vertical"
+                    android:layout_toRightOf="@id/tv_payment_center_account_text" />
+
+                <TextView
+                    android:id="@+id/tv_payment_center_account_input"
+                    style="@style/et_base_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/view_vertical_divider_payment_center_account"
+                    android:gravity="center"
+                    android:textColor="@color/pp_color_black_ff" />
+
+                <View
+                    android:id="@+id/view_horizonta_divider_payment_center01"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/tv_payment_center_account_text" />
+
+                <TextView
+                    android:id="@+id/tv_payment_center_product_name_text"
+                    style="@style/tv_left_textview_style"
+                    android:layout_below="@id/view_horizonta_divider_payment_center01"
+                    android:text="@string/pp_pay_product_name_text" />
+
+                <View
+                    android:id="@+id/view_vertical_divider_payment_center_product_name_text"
+                    style="@style/view_divider_vertical"
+                    android:layout_below="@id/view_horizonta_divider_payment_center01"
+                    android:layout_toRightOf="@id/tv_payment_center_product_name_text" />
+
+                <TextView
+                    android:id="@+id/tv_payment_center_product_name_input"
+                    style="@style/et_base_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_payment_center_account_text"
+                    android:layout_toRightOf="@id/view_vertical_divider_payment_center_product_name_text"
+                    android:gravity="center"
+                    android:textColor="@color/pp_color_black_ff" />
+
+                <View
+                    android:id="@+id/view_horizonta_divider_payment_center02"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/tv_payment_center_product_name_text" />
+
+                <TextView
+                    android:id="@+id/tv_payment_center_paymoney_text"
+                    style="@style/tv_left_textview_style"
+                    android:layout_below="@id/view_horizonta_divider_payment_center02"
+                    android:text="@string/pp_pay_paymoney_name_text" />
+
+                <View
+                    android:id="@+id/view_vertical_divider_payment_center_paymoney_text"
+                    style="@style/view_divider_vertical"
+                    android:layout_below="@id/view_horizonta_divider_payment_center02"
+                    android:layout_toRightOf="@id/tv_payment_center_paymoney_text" />
+
+                <TextView
+                    android:id="@+id/tv_payment_center_paymoney_input"
+                    style="@style/et_base_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/view_horizonta_divider_payment_center02"
+                    android:layout_toRightOf="@id/view_vertical_divider_payment_center_paymoney_text"
+                    android:gravity="center"
+                    android:textColor="@color/pp_color_black_ff" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_payment_center_choose_paytype"
+                style="@style/et_base_style"
+                android:layout_below="@id/rel_payment_center_editFrame"
+                android:gravity="center"
+                android:text="@string/pp_payment_center_choose_paytype"
+                android:textColor="@color/pp_color_black_ff" />
+
+            <LinearLayout
+                android:id="@+id/lin_payment_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/tv_payment_center_choose_paytype"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/pp_sv_frame_padding_bottom"
+                android:layout_marginTop="@dimen/pp_margin_padding_little10"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/gv_payment_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:verticalSpacing="5dp" >
+                </GridView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

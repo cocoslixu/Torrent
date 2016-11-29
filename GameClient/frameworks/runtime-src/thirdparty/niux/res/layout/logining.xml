@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/login_dialog_bg_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_gravity="center_vertical"
+              android:background="@drawable/logining_bg"
+              android:orientation="vertical" >
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp" android:gravity="center_horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="迅雷帐号"
+                android:textColor="#20222a"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/text_view_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:paddingLeft="13dp"
+                android:textColor="#20222a"
+                android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:text="正在登录..."
+            android:gravity="center"
+            android:textColor="#ff8c8c8c"
+            android:textSize="25sp" />
+
+
+    <TextView
+            android:id="@+id/text_view_changeaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="80dp"
+            android:text="切换帐号"
+            android:clickable="true"
+            android:textColor="#ff2187fb"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+</LinearLayout>

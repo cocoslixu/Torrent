@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pp_layout_height"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/pp_sv_frame_padding_top"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/pp_login_logo_img_w"
+        android:layout_height="@dimen/pp_login_logo_img_h"
+        android:layout_marginLeft="@dimen/pp_margin_padding_little10"
+        android:layout_marginRight="@dimen/pp_margin_padding_little10"
+        android:background="@drawable/pp_login_logo" />
+
+    <View
+        android:layout_width="@dimen/pp_list_view_divider_width"
+        android:layout_height="@dimen/pp_layout_vertical_divider_height"
+        android:layout_gravity="center"
+        android:background="#D2D2D2" />
+
+    <TextView
+        android:id="@+id/tv_login_main_title"
+        style="@style/textview_main_title_base_style"
+        android:gravity="center"
+        android:text="小辣椒" />
+
+</LinearLayout>

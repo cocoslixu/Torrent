@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/small_float_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/niux_image_gamefloathelper_inner"
+            />
+
+    <ImageView
+            android:id="@+id/half_float_img_left"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:src="@drawable/half_float_img_left"
+            android:visibility="gone"
+            />
+    <ImageView
+            android:id="@+id/half_float_img_right"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:src="@drawable/half_float_img_right"
+            android:visibility="gone"
+            />
+    <ImageView
+            android:id="@+id/big_float_img_left"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:src="@drawable/xlniu_open_left"
+            android:visibility="gone"
+            />
+
+    <ImageView
+            android:id="@+id/big_float_img_right"
+            android:layout_width="330dp"
+            android:layout_height="55dp"
+            android:src="@drawable/xlniu_open_right"
+            android:visibility="gone"
+            />
+
+</LinearLayout>

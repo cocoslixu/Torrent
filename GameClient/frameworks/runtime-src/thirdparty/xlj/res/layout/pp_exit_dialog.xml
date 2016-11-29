@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pp_login_et_frame_bg_delete_nouse"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/exit_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:text="是否确定退出？"
+        android:textColor="@color/pp_color_black_ff"
+        android:textSize="@dimen/pp_text_size_xlarge" />
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/exit_pic"
+        android:padding="5dp"
+         >
+         
+     </LinearLayout>
+  <!--   <ImageView
+        android:id="@+id/exit_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:src="@drawable/raiders_default" /> -->
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/pp_color_black_ff" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pp_exit_btn"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="不退出"
+            android:textColor="@drawable/pp_btn_bkg_orange_selector"
+            android:textSize="@dimen/pp_text_size_small" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/pp_color_black_ff" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pp_exit_btn"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="退出"
+            android:textColor="@drawable/pp_btn_bkg_orange_selector"
+            android:textSize="@dimen/pp_text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

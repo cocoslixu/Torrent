@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:scrollbars="vertical" >
+
+    <!-- 头部标题栏布局 -->
+
+    <LinearLayout
+        android:id="@+id/charge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/common_title_bar" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/charge_title"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_charge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+             <!-- 欢迎提示 -->
+
+            <LinearLayout
+                android:id="@+id/ll_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_welcome"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/money_exchange_welcome"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_nickname"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:gravity="left"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFF0000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+            </LinearLayout>
+          <LinearLayout
+                android:id="@+id/ll_welcomegame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_welcomegame"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/money_exchange_welcomegame"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_gamename"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="left"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFF0000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+            </LinearLayout>
+            <!-- 货币兑换提示 -->
+
+            <LinearLayout
+                android:id="@+id/ll_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg"
+                android:orientation="horizontal"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_start"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/money_exchange_start"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_num"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:gravity="left"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFF0000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_mid"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/money_exchange_mid"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/text_view_money_exchange_result"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="left"
+                    android:paddingLeft="2dip"
+                    android:singleLine="true"
+                    android:textColor="#FFFF0000"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7" />
+            </LinearLayout>
+
+            <!-- 选择金额的布局 -->
+
+            <LinearLayout
+                android:id="@+id/ll_choose_money_box"
+                android:layout_width="match_parent"
+                android:layout_height="190dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_money_box_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_10"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_selected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_10"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_50"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_50"
+                        android:textColor="#FF505050"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_money_box_line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_100"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_100"
+                        android:textColor="#FF505050"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_300"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_300"
+                        android:textColor="#FF505050"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_money_box_line_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_500"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_500"
+                        android:textColor="#FF505050"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6" />
+
+                    <TextView
+                        android:id="@+id/text_view_money_1000"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/money_1000"
+                        android:textColor="#FF505050"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_choose_money_box_line_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:orientation="horizontal"
+                    android:weightSum="100" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+
+                    <EditText
+                        android:id="@+id/edit_text_money_other"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="76"
+                        android:background="@drawable/choose_money_unselected"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="#FFFF0000"
+                        android:textSize="24sp"
+                        android:textColorHint="#FFDFDFDF"
+                        android:hint="@string/charge_num_hint" />
+                    
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:gravity="center"
+                        android:text="@string/charge_unit"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 支付宝支付 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_alipay"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg_border"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/image_view_alipay_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:contentDescription="@string/common_imageview_contentdescription"
+                    android:src="@drawable/apily_icon2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_alipay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@id/image_view_alipay_icon"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_view_alipay_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_alipay"
+                        android:textColor="#20222A"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_alipay_text_below"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_support_alipay"
+                        android:textColor="#AAB2C9"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_button_alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:button="@drawable/myradiobtn" />
+            </RelativeLayout>
+
+            <!-- 信用卡支付 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_credit"
+                android:layout_width="fill_parent"
+                android:layout_height="70dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/white_box_bg"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/image_view_credit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:contentDescription="@string/common_imageview_contentdescription"
+                    android:src="@drawable/credit_icon" />
+
+                <LinearLayout
+                    android:id="@+id/ll_credit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@id/image_view_credit_icon"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_view_credit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_credit"
+                        android:textColor="#20222A"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/text_view_credit_text_below"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/payment_support_credit"
+                        android:textColor="#AAB2C9"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_button_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:button="@drawable/myradiobtn" />
+            </RelativeLayout>
+
+            <!-- 选择完支付方式下一步的按钮 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_next_step_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/login_dlg_ok_btn_selector" >
+
+                <TextView
+                    android:id="@+id/text_view_next_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/next_step"
+                    android:textColor="#ffffffff"
+                    android:textColorHint="#b2ffffff"
+                    android:textSize="@dimen/bt_cm_textsize_17" />
+            </RelativeLayout>
+
+            <!-- 提交订单的btn -->
+
+            <RelativeLayout
+                android:id="@+id/rl_submit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="12dip"
+                android:background="@drawable/login_dlg_ok_btn_selector" >
+
+                <TextView
+                    android:id="@+id/text_view_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/submit_order"
+                    android:textColor="#ffffffff"
+                    android:textColorHint="#b2ffffff"
+                    android:textSize="@dimen/bt_cm_textsize_17" />
+
+                <ImageView
+                    android:id="@+id/image_view_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_view_submit"
+                    android:contentDescription="@string/common_imageview_contentdescription"
+                    android:src="@drawable/wait_bg_indicator_order_anticlockwise"
+                    android:visibility="gone" />
+                <!-- loading菊花在代码中添加 -->
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

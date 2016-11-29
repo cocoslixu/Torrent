@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView style="@style/scrollView_base_style" >
+
+        <RelativeLayout style="@style/rel_main_layout_style" >
+
+            <include
+                android:id="@+id/lin_phonelogin_title"
+                layout="@layout/pp_login_main_title" />
+
+            <RelativeLayout
+                android:id="@+id/rel_login_editFrame"
+                style="@style/rel_frame_dialog_bkg"
+                android:layout_below="@id/lin_phonelogin_title" >
+
+                <TextView
+                    android:id="@+id/tv_login_onekey_username_set"
+                    style="@style/et_base_style" />
+
+                <View
+                    android:id="@+id/view_Divider_onekey001"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/tv_login_onekey_username_set" />
+
+                <Button
+                    android:id="@+id/btn_login_onekey_pwd_set"
+                    style="@style/btn_getVerificationcode_style"
+                    android:layout_below="@id/view_Divider_onekey001"
+                    android:text="@string/pp_login_onekey_pwd_set" />
+
+                <View
+                    android:id="@+id/view_verticalDivider_onekey_pwd_set"
+                    style="@style/view_divider_vertical"
+                    android:layout_below="@id/view_Divider_onekey001"
+                    android:layout_toLeftOf="@id/btn_login_onekey_pwd_set" />
+
+                <EditText
+                    android:id="@+id/et_login_onekey_pwd_input"
+                    style="@style/et_base_style"
+                    android:layout_below="@id/view_Divider_onekey001"
+                    android:layout_toLeftOf="@id/view_verticalDivider_onekey_pwd_set"
+                    android:inputType="text"
+                    android:maxLength="16" />
+
+                <View
+                    android:id="@+id/view_Divider_onekey002"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/et_login_onekey_pwd_input" />
+
+                <TextView
+                    android:id="@+id/tv_login_onekey_pwd"
+                    style="@style/et_base_style"
+                    android:layout_below="@id/view_Divider_onekey002"
+                    android:text="@string/pp_login_input_pwd"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/viewDivider02"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/tv_login_onekey_pwd"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_onekey_usergareement"
+                style="@style/textview_tips_base_style"
+                android:layout_below="@id/rel_login_editFrame"
+                android:gravity="center_vertical"
+                android:text="@string/pp_login_usergareement" />
+            <RelativeLayout
+                android:id="@+id/rel_onekey_btnlayout"
+                style="@style/rel_base_style"
+                android:layout_below="@id/tv_onekey_usergareement" >
+
+                <Button
+                    android:id="@+id/btn_onekey_finishRegister"
+                    style="@style/PPStyle_LargerButton"
+                    android:text="@string/pp_login_entergame" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_phonelogin_btnlayout02"
+                style="@style/rel_base_style"
+                android:layout_below="@id/rel_onekey_btnlayout"
+                android:layout_marginBottom="@dimen/pp_sv_frame_padding_bottom" >
+
+                <Button
+                    android:id="@+id/btn_reBack2login"
+                    style="@style/PPStyle_SmallRightButton"
+                    android:text="@string/pp_login_btn_reBack2login" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

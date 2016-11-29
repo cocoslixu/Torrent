@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- frame 's width -->
+    <dimen name="pp_dialog_frame_width_larger">300dp</dimen>
+    <dimen name="pp_dialog_frame_width_small">250dp</dimen>
+    <dimen name="pp_dialog_frame_height_larger">324dp</dimen>
+    <dimen name="pp_dialog_frame_height">282dp</dimen>
+
+    <!-- frame and title 's padding -->
+    <dimen name="pp_list_view_divider_width">2.0px</dimen>
+    <dimen name="pp_sv_frame_padding_top">15dp</dimen>
+    <dimen name="pp_sv_frame_padding_bottom">22dp</dimen>
+    <dimen name="pp_rel_layout_padding_lr">10dp</dimen>
+    <dimen name="pp_main_tilte_padding_lr">12dp</dimen>
+    <!-- other -->
+    <dimen name="pp_main_title_wh">35dp</dimen>
+    <dimen name="pp_main_title_margin_height">20dp</dimen>
+    <dimen name="pp_popwindow_deletebtn_wh">10dp</dimen>
+    <dimen name="pp_all_custome_img_wh">20dp</dimen>
+    <dimen name="pp_otherlogin_img_wh">30dp</dimen>
+    <dimen name="pp_account_nextstep_img_wh">20dp</dimen>
+    <dimen name="pp_login_logo_img_w">80dp</dimen>
+    <dimen name="pp_login_logo_img_h">35dp</dimen>
+    <dimen name="pp_login_logo_img_w_small">29dp</dimen>
+    
+    <dimen name="pp_tv_view_minheight">25dp</dimen>
+    <dimen name="pp_et_view_minheight">44dp</dimen>
+    <dimen name="pp_padding_half_size">12dp</dimen>
+    <!-- LinearLayout 的height -->
+    <dimen name="pp_layout_height">35dp</dimen>
+    <dimen name="pp_layout_vertical_divider_height">30dp</dimen>
+
+    <!-- margin 的间距 -->
+    <dimen name="pp_margin_menu_zone">0dp</dimen>
+    <dimen name="pp_margin_padding_little10">10dp</dimen>
+    <dimen name="pp_margin_padding_micro12">12dp</dimen>
+    <dimen name="pp_margin_padding_small14">14dp</dimen>
+    <dimen name="pp_margin_padding_small15">15dp</dimen>
+    <dimen name="pp_margin_padding_medium16">16dp</dimen>
+    <dimen name="pp_margin_padding_large18">18dp</dimen>
+    <dimen name="pp_margin_padding_large20">20dp</dimen>
+    <dimen name="pp_margin_padding_large24">24dp</dimen>
+
+    <!-- 各类button -->
+    <dimen name="pp_btn_zero_height">0dp</dimen>
+    <dimen name="pp_btn_corners_radius">6dp</dimen>
+    <dimen name="pp_btn_text_size">18sp</dimen>
+    <dimen name="pp_btn_base_size">45dp</dimen>
+    <dimen name="pp_btn_phonelogin_height">46dp</dimen>
+    <dimen name="pp_btn_login_height">42dp</dimen>
+    <dimen name="pp_btn_min_width">74dp</dimen>
+    <dimen name="pp_btn_verificationcode">98dp</dimen>
+    <!-- 各类textview -->
+    <dimen name="pp_tv_left_weight">75dp</dimen>
+    <!-- textSize -->
+    <dimen name="pp_text_size_little">10sp</dimen>
+    <dimen name="pp_text_size_micro">12sp</dimen>
+    <dimen name="pp_text_size_small">14sp</dimen>
+    <dimen name="pp_text_size_medium">15sp</dimen>
+    <dimen name="pp_text_size_large">17sp</dimen>
+    <dimen name="pp_text_size_xlarge">19sp</dimen>
+    <dimen name="pp_text_size_xxlarge">24sp</dimen>
+    <dimen name="pp_text_size_xxxlarge">30sp</dimen>
+
+</resources>

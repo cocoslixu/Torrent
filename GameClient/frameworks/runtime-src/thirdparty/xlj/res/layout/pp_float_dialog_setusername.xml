@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView style="@style/scrollView_base_style" >
+
+        <RelativeLayout style="@style/rel_main_layout_style" >
+
+            <include
+                android:id="@+id/lin_all_custom_main_title"
+                layout="@layout/pp_all_custom_main_title" />
+
+            <TextView
+                android:id="@+id/tv_float_setusername_tips"
+                style="@style/textview_tips_base_style"
+                android:layout_below="@id/lin_all_custom_main_title"
+                android:text="@string/pp_float_setusername_tips"
+                android:textColor="@color/pp_color_red" />
+
+            <RelativeLayout
+                android:id="@+id/rel_float_setusername_editFrame"
+                style="@style/rel_frame_dialog_bkg"
+                android:layout_height="@dimen/pp_et_view_minheight"
+                android:layout_below="@id/tv_float_setusername_tips" >
+
+                <TextView
+                    android:id="@+id/tv_float_setusername_account_text"
+                    style="@style/tv_left_textview_style"
+                    android:text="@string/pp_pay_account_text" />
+
+                <View
+                    android:id="@+id/view_vertical_divider_float_setusername_account"
+                    style="@style/view_divider_vertical"
+                    android:layout_toRightOf="@id/tv_float_setusername_account_text"
+                    />
+
+                <EditText
+                    android:id="@+id/et_float_setusername_username_set"
+                    style="@style/et_base_style"
+                    android:layout_toRightOf="@id/view_vertical_divider_float_setusername_account"
+                    
+                    android:hint="@string/pp_float_setusername_account_input"
+                    android:inputType="text"
+                    android:maxLength="16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_float_setusername_btnlayout"
+                style="@style/rel_base_style"
+                android:layout_below="@id/rel_float_setusername_editFrame"
+                android:layout_marginBottom="@dimen/pp_sv_frame_padding_bottom" >
+
+                <Button
+                    android:id="@+id/btn_float_setusername_finish"
+                    style="@style/PPStyle_LargerButton"
+                    android:text="@string/pp_login_find_msg" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

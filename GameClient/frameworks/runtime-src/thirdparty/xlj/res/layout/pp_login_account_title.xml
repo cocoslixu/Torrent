@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/pp_layout_height"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/pp_sv_frame_padding_top"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/pp_login_logo_img_h"
+        android:layout_height="@dimen/pp_login_logo_img_h"
+        android:layout_marginLeft="@dimen/pp_margin_padding_little10"
+        android:layout_marginRight="@dimen/pp_margin_padding_little10"
+        android:background="@drawable/pp_login_mm" />
+
+    <LinearLayout
+        android:id="@+id/lin_sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pp_layout_height"
+            android:gravity="center|left"
+            android:text="帐号:"
+            android:textColor="@color/pp_color_black_ff" 
+            android:textSize="@dimen/pp_text_size_medium" />
+
+        <TextView
+            android:id="@+id/tv_float_account_username"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pp_layout_height"
+            android:gravity="center|left"
+            android:textSize="@dimen/pp_text_size_medium" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_float_account_username_set"
+        style="@style/PPStyle_SmallRightButton"
+        android:layout_width="@dimen/pp_btn_base_size"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="@dimen/pp_margin_padding_little10"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="修改"
+        android:textSize="@dimen/pp_text_size_micro" />
+
+</LinearLayout>

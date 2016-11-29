@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="view_divider_horizontal">
+        <item name="android:background">@color/pp_color_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/pp_list_view_divider_width</item>
+    </style>
+
+    <style name="view_divider_vertical">
+        <item name="android:background">@drawable/pp_vertical_divider</item>
+        <item name="android:layout_width">@dimen/pp_list_view_divider_width</item>
+        <item name="android:layout_height">@dimen/pp_et_view_minheight</item>
+    </style>
+    <!-- scrollView style -->
+    <style name="scrollView_base_style">
+        <item name="android:layout_width">@dimen/pp_dialog_frame_width_larger</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/pp_login_et_frame_bg_delete_nouse</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!-- imageview close style -->
+    <style name="imageview_closedialog_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center|right|top</item>
+        <item name="android:layout_marginTop">@dimen/pp_sv_frame_padding_top</item>
+        <item name="android:background">@drawable/pp_login_close_selector</item>
+    </style>
+
+    <style name="PPStyle" />
+
+    <style name="NoShadowGreenButton" parent="@style/PPStyle">
+        <item name="android:textSize">@dimen/pp_btn_text_size</item>
+        <item name="android:textColor">@color/pp_color_white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/pp_button_green_edit</item>
+        <item name="android:minWidth">@dimen/pp_btn_min_width</item>
+        <item name="android:minHeight">@dimen/pp_btn_zero_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PPStyle_SmallButton" parent="@style/NoShadowGreenButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/pp_btn_phonelogin_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/pp_btn_bkg_orange_selector</item>
+        <!-- <item name="android:layout_marginTop">@dimen/pp_margin_padding_little10</item> -->
+        <item name="android:textSize">@dimen/pp_text_size_medium</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="PPStyle_LargerButton" parent="@style/PPStyle_SmallButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/pp_btn_login_height</item>
+        <item name="android:textSize">@dimen/pp_text_size_medium</item>
+    </style>
+
+    <style name="PPStyle_SmallRightButton" parent="@style/PPStyle_SmallButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/pp_color_textcolor_orange</item>
+    </style>
+
+    <style name="PPStyle_SmallLeftButton" parent="@style/PPStyle_SmallButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/pp_color_textcolor_orange</item>
+    </style>
+    <!-- rel dialog frame style -->
+    <style name="rel_frame_dialog_bkg" parent="@style/PPStyle">
+        <item name="android:layout_width">@dimen/pp_dialog_frame_width_larger</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/pp_login_et_frame_bg_delete_nouse</item>
+        <item name="android:layout_marginTop">@dimen/pp_margin_padding_small15</item>
+    </style>
+    <!-- rel layout base style  top=15dp -->
+    <style name="rel_main_layout_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/pp_rel_layout_padding_lr</item>
+        <item name="android:paddingRight">@dimen/pp_rel_layout_padding_lr</item>
+    </style>
+    <!-- rel layout base style  top=10dp -->
+    <style name="rel_base_style">
+        <item name="android:layout_width">@dimen/pp_dialog_frame_width_larger</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/pp_margin_padding_little10</item>
+    </style>
+    <!-- button (verificationcode)style -->
+    <style name="btn_getVerificationcode_style">
+        <item name="android:layout_width">@dimen/pp_btn_verificationcode</item>
+        <item name="android:layout_height">@dimen/pp_et_view_minheight</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/pp_list_view_divider_width</item>
+        <item name="android:background">@null</item>
+        <!-- <item name="android:background">@drawable/setting_background_item</item> -->
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/pp_color_textcolor_orange</item>
+        <item name="android:textSize">@dimen/pp_text_size_medium</item>
+    </style>
+    <!-- TextView style -->
+    <style name="textview_base_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- TextView tips style -->
+    <style name="textview_tips_base_style">
+        <item name="android:layout_width">@dimen/pp_dialog_frame_width_larger</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/pp_margin_padding_little10</item>
+        <item name="android:paddingRight">@dimen/pp_margin_padding_little10</item>
+        <item name="android:paddingTop">@dimen/pp_margin_padding_small15</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/pp_color_textcolor_normal</item>
+        <item name="android:textSize">@dimen/pp_text_size_micro</item>
+    </style>
+    <!-- TextView (left 's )style -->
+    <style name="tv_left_textview_style">
+        <item name="android:layout_width">@dimen/pp_tv_left_weight</item>
+        <item name="android:layout_height">@dimen/pp_et_view_minheight</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginRight">@dimen/pp_list_view_divider_width</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/pp_color_textcolor_gray</item>
+        <item name="android:textSize">@dimen/pp_text_size_medium</item>
+    </style>
+    <!-- float accpunt 's textView base style -->
+    <style name="float_account_textView_base_style" parent="@style/textview_tips_base_style">
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- main tite 's textView style -->
+    <style name="textview_main_title_base_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingLeft">@dimen/pp_main_tilte_padding_lr</item>
+        <item name="android:paddingRight">@dimen/pp_main_tilte_padding_lr</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/pp_color_black_ff</item>
+        <item name="android:textSize">@dimen/pp_text_size_xlarge</item>
+    </style>
+    <!-- edittext style -->
+    <style name="et_base_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:minHeight">@dimen/pp_et_view_minheight</item>
+        <item name="android:paddingLeft">@dimen/pp_margin_padding_little10</item>
+        <item name="android:paddingRight">@dimen/pp_margin_padding_little10</item>
+        <item name="android:textColorHint">@color/pp_color_textcolor_hint</item>
+        <item name="android:textSize">@dimen/pp_text_size_medium</item>
+    </style>
+    <!-- floatview -->
+    <style name="floatview_controller_text">
+        <item name="android:textColor">#E0E0E0</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">45dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="floatview_menu_view_lin">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pepper.sdk.view.FloatControllerView_Menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 左边块 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- 左边占位符-外 layout_marginLeft代表悬浮小球跟菜单栏的距离 -->
+
+        <LinearLayout
+            android:id="@+id/lin_placeholder_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pp_margin_padding_little10"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pp_float_mainicon" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/controller_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/pp_float_controller_m_bg_l"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <!--  -->
+
+
+                <!-- 左边占位符-内 -->
+
+                <LinearLayout
+                    android:id="@+id/placeholder_left_0"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pp_float_mainicon" />
+                </LinearLayout>
+
+             
+
+                <!-- 第一个 帐号 -->
+
+                <LinearLayout
+                    android:id="@+id/controller_user"
+                    style="@style/floatview_menu_view_lin"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/pp_float_controller_m_user" />
+
+                    <TextView
+                        style="@style/floatview_controller_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pp_float_menu_account" />
+                </LinearLayout>
+                   <!-- 第二个 游戏大厅 -->
+
+                <LinearLayout
+                    android:id="@+id/controller_index"
+                    style="@style/floatview_menu_view_lin"
+                    android:layout_marginLeft="@dimen/pp_margin_menu_zone"
+                    android:orientation="vertical"
+                     >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/pp_float_controller_m_index" />
+
+                    <TextView
+                        style="@style/floatview_controller_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pp_float_menu_gamecenter" />
+                </LinearLayout>
+               
+                <!-- 加速球 -->
+
+                <LinearLayout
+                    android:id="@+id/controller_cleanBall"
+                    style="@style/floatview_menu_view_lin"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/pp_float_controller_m_security" />
+
+                    <TextView
+                        style="@style/floatview_controller_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pp_float_menu_cleanBall" />
+                </LinearLayout>
+ 				<!--退出 -->
+
+                <LinearLayout
+                    android:id="@+id/controller_exitaccount"
+                    style="@style/floatview_menu_view_lin"
+                    android:orientation="vertical"
+                     >
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:background="@drawable/pp_float_controller_m_notification" />
+
+                    <TextView
+                        style="@style/floatview_controller_text"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pp_float_menu_msg" />
+                </LinearLayout>
+                
+                <!-- 右边占位符 -内 -->
+
+                <LinearLayout
+                    android:id="@+id/placeholder_right_0"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pp_margin_menu_zone"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/pp_float_mainicon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 右边占位符 -外 -->
+
+            <LinearLayout
+                android:id="@+id/placeholder_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pp_margin_padding_little10"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pp_float_mainicon" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</com.pepper.sdk.view.FloatControllerView_Menu>

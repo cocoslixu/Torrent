@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView style="@style/scrollView_base_style" >
+
+        <RelativeLayout style="@style/rel_main_layout_style" >
+
+            <include
+                android:id="@+id/lin_phonelogin_title"
+                layout="@layout/pp_login_main_title" />
+
+            <RelativeLayout
+                android:id="@+id/rel_login_oldusereditFrame"
+                style="@style/rel_frame_dialog_bkg"
+                android:layout_below="@id/lin_phonelogin_title" >
+
+                <com.pepper.sdk.view.Pepper_AccountLinearLayout
+                    android:id="@+id/lin_login_olduser_accout_input"
+                    android:layout_width="@dimen/pp_dialog_frame_width_larger"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/pp_login_intput_mobileorUsername"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/pp_color_textcolor_orange"
+                    android:textSize="@dimen/pp_text_size_medium" />
+
+                <View
+                    android:id="@+id/view_Divider_phonelogin"
+                    style="@style/view_divider_horizontal"
+                    android:layout_below="@id/lin_login_olduser_accout_input" />
+
+                <Button
+                    android:id="@+id/btn_login_olduserpwd"
+                    style="@style/btn_getVerificationcode_style"
+                    android:layout_below="@id/view_Divider_phonelogin"
+                    android:text="@string/pp_login_forgetpwd" />
+
+                <View
+                    android:id="@+id/view_verticalDivider02_olduser"
+                    style="@style/view_divider_vertical"
+                    android:layout_below="@id/view_Divider_phonelogin"
+                    android:layout_toLeftOf="@id/btn_login_olduserpwd" />
+
+                <com.pepper.sdk.view.EditTextUtils
+                    android:id="@+id/et_login_olduserpwd_input"
+                    style="@style/et_base_style"
+                    android:layout_below="@id/view_Divider_phonelogin"
+                    android:layout_toLeftOf="@+id/view_verticalDivider02_olduser"
+                    android:hint="@string/pp_login_loginpwd"
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:password="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_login_olduserloginlayout"
+                style="@style/rel_base_style"
+                android:layout_below="@id/rel_login_oldusereditFrame" >
+
+                <Button
+                    android:id="@+id/btn_login_olduser_login"
+                    style="@style/PPStyle_LargerButton"
+                    android:text="@string/pp_login_entergame" />
+
+                <ProgressBar
+                    android:id="@+id/btn_login_olduserprogressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pp_btn_login_height"
+                    android:layout_gravity="center|right"
+                    android:indeterminateDrawable="@drawable/pp_loading_icon"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_login_olduser_btnlayout02"
+                style="@style/rel_base_style"
+                android:layout_below="@id/rel_login_olduserloginlayout"
+                android:layout_marginBottom="@dimen/pp_sv_frame_padding_bottom" >
+
+                <Button
+                    android:id="@+id/btn_login_olduser_newuser_register"
+                    style="@style/PPStyle_SmallRightButton"
+                    android:text="@string/pp_login__newuser_register" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

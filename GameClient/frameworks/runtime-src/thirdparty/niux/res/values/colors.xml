@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="EntryBorderWidth">1px</dimen>
+    <!-- 设置项目，填充的颜色 -->
+    <color name="EntryBorderColor">#FFFFFFFF</color>
+    <!-- 设置项目，线条的颜色 -->
+    <color name="EntryBorderLineColor">#FFCFD0D5</color>
+    <!-- 设置项目，填充的颜色 -->
+    <color name="EntryBorderColorHover">#72c6cbdd</color>
+    <color name="white">#FFFFFF</color>
+    <color name="qinse">#3F4650</color>
+</resources>
